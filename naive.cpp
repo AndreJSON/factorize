@@ -24,21 +24,20 @@ void Naive::breakDown(const mpz_class& num) {
 	mpz_class root;
 	mpz_sqrt(root.get_mpz_t(), num.get_mpz_t());
 	mpz_class tmp;
-	for(mpz_class i = 2; i < root; i++) {
+	for(mpz_class i = 2; i <= root; i++) {
 		if(num % i == 0) { //meaning num is divisible by i.
-			//cout << num << " " << i << " " << num/i << endl;
 			factors.push(i);
 			factors.push(num/i);
 			return;
 		}
 	}
-	if(root == 2) { //num was 4,6 or 8.
-		res.push_back(2);
-		factors.push(num/2);
-	}
 }
 
 void Naive::print() const {
+	if(interrupted) {
+		cout << "fail" << endl;
+		return;
+	}
 	for(auto i : res) {
 		cout << i.get_mpz_t() << endl;
 	}

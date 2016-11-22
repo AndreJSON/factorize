@@ -10,6 +10,7 @@ class Naive {
 private:
 	vector<mpz_class> res;
 	stack<mpz_class> factors;
+	bool interrupted = false;
 public:
 	Naive();
 	void factorize(const mpz_class& num);
