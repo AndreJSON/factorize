@@ -1,5 +1,4 @@
-#include "naive.hpp"
-#include "naive3.hpp"
+#include "pollard2.hpp"
 #include <iostream>
 #include <vector>
 #include <gmp.h>
@@ -9,15 +8,15 @@ using std::cin; using std::cout;
 using std::vector;
 
 int main(void) {
-	Naive3 s1;
+	Pollard2 pol;
 	mpz_class num;
 	while(cin >> num) {
 		if(num == 1) {
 			cout << 1 << endl << endl;
 			continue;
 		}
-		s1.factorize(num);
-		s1.print();
+		pol.factorize(num);
+		pol.print();
 		cout << endl;
 	}
 	return 0;

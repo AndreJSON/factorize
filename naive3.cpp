@@ -24,7 +24,6 @@ void Naive3::factorize(const mpz_class& num) {
 
 void Naive3::breakDown(pair<mpz_class,mpz_class>& num) {
 	mpz_class batchLimit = num.second + batchSize;
-	//mpz_sqrt(root.get_mpz_t(), num.first.get_mpz_t());
 	mpz_class tmp;
 	for(mpz_class i = num.second; i <= batchLimit; i++) {
 		if(num.first % i == 0) { //meaning num is divisible by i.
