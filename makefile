@@ -3,7 +3,7 @@ CC = g++
 FLAGS = -std=c++11 -Wall -Wextra
 LIBS = -lgmp -lgmpxx
 COMMON = main.cpp
-NAIVE = naive.cpp
+NAIVE = naive.cpp naive2.cpp naive3.cpp
 
 naive:
 	$(CC) $(FLAGS) -o main.out $(COMMON) $(NAIVE) $(LIBS)

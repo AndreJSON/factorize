@@ -1,4 +1,5 @@
 #include "naive.hpp"
+#include "naive3.hpp"
 #include <iostream>
 #include <vector>
 #include <gmp.h>
@@ -8,7 +9,7 @@ using std::cin; using std::cout;
 using std::vector;
 
 int main(void) {
-	Naive s1;
+	Naive3 s1;
 	mpz_class num;
 	while(cin >> num) {
 		if(num == 1) {
