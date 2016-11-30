@@ -1,0 +1,7 @@
+The best algorithm is Pollard2.
+To compile and run Pollard2 invoke:
+```
+make
+./main.out < tests/testX
+```
+Where X is replaced by the test you want to run.
