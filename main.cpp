@@ -1,4 +1,4 @@
-#include "pollard2.hpp"
+#include "naive4.hpp"
 #include <iostream>
 #include <vector>
 #include <gmp.h>
@@ -8,7 +8,7 @@ using std::cin; using std::cout;
 using std::vector;
 
 int main(void) {
-	Pollard2 pol;
+	Naive4 pol;
 	mpz_class num;
 	while(cin >> num) {
 		if(num == 1) {

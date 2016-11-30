@@ -16,6 +16,10 @@ naive3:
 	$(CC) $(FLAGS) -o main.out $(COMMON) naive3.cpp $(LIBS)
 	@echo "----------DONE!----------"
 
+naive4:
+	$(CC) $(FLAGS) -o main.out $(COMMON) naive4.cpp $(LIBS)
+	@echo "----------DONE!----------"
+
 pollard:
 	$(CC) $(FLAGS) -o main.out $(COMMON) pollard.cpp $(LIBS)
 	@echo "----------DONE!----------"

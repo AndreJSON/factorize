@@ -33,6 +33,7 @@ void Pollard2::breakDown(mpz_class& num) {
 	mpz_urandomm(x.get_mpz_t(),randomState,num.get_mpz_t());
 	mpz_class y = x;
 	for(int lapsLeft = batchSize; lapsLeft > 0; lapsLeft--) {
+		//Generate new values of x and y.
 		x = (x*x+1) % num;
 		y = (y*y+1) % num;
 		y = (y*y+1) % num;
